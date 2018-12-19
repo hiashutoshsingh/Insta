@@ -6,30 +6,37 @@ import {
   View, Text, StyleSheet
 }
 from 'react-native';
-import {Icon} from 'native-base';
+import {
+  Icon
+}
+from 'native-base';
 
 class SearchTab extends Component {
 
-static navigationOptions = {
-    tabBarIcon: ({ tintColor }) => (
-      <Icon name="ios-search" 
-      style={{ color: tintColor }} />
-      )
-  }
+  static navigationOptions = {
+      tabBarIcon: ({
+        tintColor
+      }) => ( < Icon name = "ios-search"
+        style = {
+          {
+            color: tintColor
+          }
+        }
+        />)
+      }
 
-  render() {
-    return ( 
-      <View style={styles.container}>
-      <Text>Search</Text> 
-      </View >
-    );
-  }
-}
-export default SearchTab;
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-});
+        render() {
+        return ( < View style = {
+            styles.container
+          } >
+          < Text > Search < /Text> < /View >);
+        }
+      }
+      export default SearchTab;
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center'
+        }
+      });
